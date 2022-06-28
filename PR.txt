@@ -1,0 +1,12 @@
+EX1:
+A correr na porta 3028
+Copiei o conteúdo do website para 3 ficheiros csv, dando de import de cada um deles para a base de dados:
+    mongoimport --db CONDOMINIO --collection pagamentos --type csv --file pagamentos.csv --headerline
+    mongoimport --db CONDOMINIO --collection movimentos --type csv --file movimentos.csv --headerline
+    mongoimport --db CONDOMINIO --collection fracoes --type csv --file fracoes.csv --headerline
+
+EX2:
+A correr na porta 3029
+Necessário executar o exercicio 1 para o exercicio 2 funcionar:
+    npm start (na diretoria do ex1)
+    npm start (na diretoria do ex2)

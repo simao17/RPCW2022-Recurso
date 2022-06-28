@@ -1,0 +1,29 @@
+extends layout
+
+block content
+    a(href='/') Homepage
+    <div class="w3-container w3-margin-top w3-display-topmiddle" style="top:100px">
+        .w3-container.w3-blue
+            h2.w3-center Criar pagamento
+        <form class="w3-container w3-card-4" action='/pagamentos/add' method='POST' style="width:1000px">
+            #1st_File.w3-row.w3-margin-bottom
+                <br>
+                    .w3-row.w3-margin-bottom
+                        .w3-col.s3
+                            label.w3-text-blue
+                                b Fração
+                        .w3-col.s9.w3-border
+                            input.w3-input.w3-border.w3-light-grey(type='text' name='Fração' required)
+                <br>
+                .w3-row.w3-margin-bottom
+                    .w3-col.s3
+                        label.w3-text-blue
+                            b Mês a pagar 
+                    .w3-col.s9.w3-border
+                        input.w3-input.w3-border.w3-light-grey(type='text' name='Mês' required)
+            br
+            br
+            br
+            input.w3-bar-item.w3-button.w3-blue-grey(type='submit' value='Criar Movimento' required)
+        </form>
+    </div>

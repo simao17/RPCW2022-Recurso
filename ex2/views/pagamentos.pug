@@ -1,0 +1,38 @@
+extends layout
+
+block content
+  div 
+    h1 Movimentos 
+    div  
+        table 
+            tr 
+                th Fração 
+                th Janeiro
+                th Fevereiro
+                th Março
+                th Abril
+                th Maio 
+                th Junho 
+                th Julho 
+                th Agosto 
+                th Setembro 
+                th Outubro 
+                th Novembro 
+                th Dezembro
+                
+            each p in pagamentos
+                tr
+                    td= p.Fração
+                    td= p.Jan 
+                    td= p.Fev 
+                    td= p.Mar 
+                    td= p.Abr 
+                    td= p.Jun
+                    td= p.Jul 
+                    td= p.Ago 
+                    td= p.Set 
+                    td= p.Out 
+                    td= p.Nov 
+                    td= p.Dez
+        h3
+            a(href="/pagamentos/add") Adicionar Pagamento  

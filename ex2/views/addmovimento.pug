@@ -1,0 +1,58 @@
+extends layout
+
+block content
+    a(href='/') Homepage
+    <div class="w3-container w3-margin-top w3-display-topmiddle" style="top:100px">
+        .w3-container.w3-blue
+            h2.w3-center Criar movimento
+        <form class="w3-container w3-card-4" action='/movimentos/add' method='POST' style="width:1000px">
+            #1st_File.w3-row.w3-margin-bottom
+                <br>
+                    .w3-row.w3-margin-bottom
+                        .w3-col.s3
+                            label.w3-text-blue
+                                b Número
+                        .w3-col.s9.w3-border
+                            input.w3-input.w3-border.w3-light-grey(type='text' name='Número' required)
+                <br>
+                .w3-row.w3-margin-bottom
+                    .w3-col.s3
+                        label.w3-text-blue
+                            b Tipo
+                    .w3-col.s9.w3-border
+                        input.w3-input.w3-border.w3-light-grey(type='text' name='Tipo' required)
+                <br>
+                .w3-row.w3-margin-bottom
+                    .w3-col.s3
+                        label.w3-text-blue
+                            b Data
+                    .w3-col.s9.w3-border
+                        input.w3-input.w3-border.w3-light-grey(type='text' name='Data' required)
+                <br>
+                .w3-row.w3-margin-bottom
+                    .w3-col.s3
+                        label.w3-text-blue
+                            b Valor
+                    .w3-col.s9.w3-border
+                        input.w3-input.w3-border.w3-light-grey(type='text' name='Valor' required)
+                <br>
+                .w3-row.w3-margin-bottom
+                    .w3-col.s3
+                        label.w3-text-blue
+                            b Entidade
+                    .w3-col.s9.w3-border
+                        input.w3-input.w3-border.w3-light-grey(type='text' name='Entidade' required)
+                <br>
+                .w3-row.w3-margin-bottom
+                    .w3-col.s3
+                        label.w3-text-blue
+                            b Descrição
+                    .w3-col.s9.w3-border
+                        input.w3-input.w3-border.w3-light-grey(type='text' name='Descrição' required)
+            br
+            br
+            br
+            input.w3-bar-item.w3-button.w3-blue-grey(type='submit' value='Criar Movimento' required)
+        </form>
+    </div>
+    
